@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graph</title>
+    <link rel="stylesheet" href="index.css">
+  </head>
+
+  <body>
+    <div id="mainDiv">
+      <!-- <div
+        id="databaseDiv"
+        style="display: flex; flex-direction: column; margin-top: 10%">
+        <label for="Host">Host: </label>
+        <input type="text" id="Host" name="host" value="localhost" />
+        <label for="Port">Port: </label>
+        <input type="text" id="Port" name="port" value="5432" />
+        <label for="Id">User: </label>
+        <input type="text" id="User" name="user" value="igis" />
+        <label for="Password">Password: </label>
+        <input type="text" id="Password" name="password" value="igis" />
+        <label for="Database">Database: </label>
+        <input type="text" id="Database" name="database" value="dscl" />
+        <button
+          id="dbClick"
+          class="btn btn-primary"
+          style="width: 97px; margin-top: 10%; align-self: center">
+          Click
+        </button>
+      </div> -->
+      <div id="graphCombo">
+        <label for="chart">Choose a Graph:</label>
+        <select name="Graph" id="Graph">
+          <option value="areaGraph">Area Graph</option>
+          <option value="boxPlot">Box Plot</option>
+          <option value="bubble">Bubble chart</option>
+          <option value="treeMap">Tree Map</option>
+          <option value="timeSeries">Time Series</option>
+          <option value="chord">Chord Diagram</option>
+          <option value="scatterPlot">Scatter Plot</option>
+          <option value="dataClock">Data Clock</option>
+          <!-- <option value="scatterPlotMatrix">Scatter Plot Matrix</option> -->
+          <option value="lineGraph">Line Graph</option>
+          <option value="barGraph">Bar Graph</option>
+        </select>
+        <div id="showGraphDiv">
+          <label for="table">Table Name:</label>
+          <select
+            name="table"
+            id="table"
+            style="width: 142px; background-color: darkgray"
+          ></select>
+          <label for="X" id="labelX">X: </label>
+
+          <select
+            name="x"
+            id="x"
+            style="width: 142px; background-color: darkgray"
+          ></select>
+          <label for="Y" id="labelY">Y: </label>
+          <select
+            name="y"
+            id="y"
+            style="width: 142px; background-color: darkgray"
+          ></select>
+          <label for="Y" id="labelY">Color </label>
+          <input type="color">
+          <div id="extraShowGraphDiv"></div>
+          <div
+            id="colorDiv"
+            style="width: 250px; height: 143px; overflow: scroll;"
+          ></div>
+          <button
+            id="click"
+            class="btn btn-primary"
+            style="width: 146px; margin-top: 10%; align-self: center"
+          >
+            Generate Chart
+          </button>
+          <p>ertwertw</p>
+          <p>ertwertw</p>
+          <p>ertwertw</p>
+          <p>ertwertw</p>
+        </div>
+      </div>
+    </div>
+    <iframe
+      src=""
+      title="Graph"
+      id="iframeGraph"
+      height="100%"
+      width="100%"
+    ></iframe>
+    <div style="display: flex; justify-content: center">
+      <button
+        style="align-self: center; width: 120px; margin-top: 4%;"
+        class="btn btn-primary"
+        id="clearChartButton"
+      >
+        Clear Chart
+      </button>
+    </div>
+  </body>
+</html>
